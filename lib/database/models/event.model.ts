@@ -1,7 +1,8 @@
+import { url } from "inspector";
 import { Schema, model, models } from "mongoose";
 import { Document } from "mongoose";
 
-interface IEvent extends Document {
+export interface IEvent extends Document {
   _id: string;
   title: string;
   description?: string;
