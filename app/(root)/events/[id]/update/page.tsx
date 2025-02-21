@@ -12,6 +12,7 @@ type UpdateEventProps = {
 const UpdateEvents = async ({ params }: UpdateEventProps) => {
   const { sessionClaims } = await auth();
   const userId = sessionClaims?.userId as string;
+  const trimUserId = userId.trim();
   const { id } = await params;
   const event = await getEventById(id);
   return (
@@ -24,7 +25,7 @@ const UpdateEvents = async ({ params }: UpdateEventProps) => {
       <div className="wrapper my-8">
         <EventForm
           type="Update"
-          userId={userId}
+          userId={trimUserId}
           eventId={event._id}
           event={event}
         />
