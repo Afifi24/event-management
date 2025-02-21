@@ -100,6 +100,13 @@ export function removeKeysFromQuery({
 }
 
 export const handleError = (error: unknown) => {
-  console.error(error);
-  throw new Error(typeof error === "string" ? error : JSON.stringify(error));
+  console.error("here is the error:", error);
+  // throw new Error(typeof error === "string" ? error : JSON.stringify(error));
+};
+
+// lib/utils.ts
+import { Types } from "mongoose";
+
+export const isValidObjectId = (id: string) => {
+  return /^[0-9a-fA-F]{24}$/.test(id) && Types.ObjectId.isValid(id);
 };
