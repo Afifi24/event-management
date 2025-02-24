@@ -43,8 +43,8 @@ npm run dev
 
 <!-- Screen Shoots -->
 
-![Homepage](/public/screenShoots/Home.jpg)
-![createEvents](/public/screenShoots/createEvents.jpg)
-![eventDetails](/public/screenShoots/eventDetails.jpg)
-![profile](/public/screenShoots/profile.jpg)
-![stripe](/public/screenShoots/stripe.jpg)
+![Homepage](/public/assets/screenShoots/Home.jpg)
+![createEvents](/public/assets/screenShoots/createEvents.jpg)
+![eventDetails](/public/assets/screenShoots/eventDetails.jpg)
+![profile](/public/assets/screenShoots/profile.jpg)
+![stripe](/public/assets/screenShoots/stripe.jpg)
