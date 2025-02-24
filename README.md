@@ -1,13 +1,13 @@
-<!-- Clone project -->
+# Clone project
 
 git clone https://github.com/Afifi24/event-management.git
 cd project-name
 
-<!-- Installation -->
+# Installation
 
 npm install
 
-<!-- Set up environment -->
+# Set up environment
 
 # Clerk Authentication
 
@@ -37,14 +37,28 @@ STRIPE_WEBHOOK_SECRET=whsec_XXXXXXXXXXXXXXXX
 NEXT_PUBLIC_SERVER_URL=http://localhost:3000
 SIGNING_SECRET=whsec_XXXXXXXXXXXXXXXX
 
-<!-- run the application -->
+# Run the application
 
 npm run dev
 
-<!-- Screen Shoots -->
+# ScreenShoots
+
+# Home page
 
 ![Homepage](/public/assets/screenShoots/Home.jpg)
+
+# Create Events
+
 ![createEvents](/public/assets/screenShoots/createEvents.jpg)
+
+# Event Details
+
 ![eventDetails](/public/assets/screenShoots/eventDetails.jpg)
+
+# Profile
+
 ![profile](/public/assets/screenShoots/profile.jpg)
+
+# Stripe details
+
 ![stripe](/public/assets/screenShoots/stripe.jpg)
