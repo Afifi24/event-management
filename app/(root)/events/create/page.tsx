@@ -4,7 +4,7 @@ import { auth } from "@clerk/nextjs/server";
 const CreateEvents = async () => {
   const { sessionClaims } = await auth();
   const userId = sessionClaims?.userId as string;
-  const trimUserId = userId.trim();
+  const trimUserId = userId?.trim();
   return (
     <>
       <section className="bg-primary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py">

@@ -5,17 +5,18 @@ import React from "react";
 import { Button } from "../ui/button";
 import NavItems from "./NavItems";
 import MobileNav from "./MobileNav";
+import { Translate } from "./translate";
 
 const Header = () => {
   return (
-    <header className="w-full px-8 border-b">
+    <header className="w-full border-b">
       <div className="wrapper flex items-center justify-between">
         <Link className="w-36" href={"/"}>
           <Image
             src={"/assets/images/logo.svg"}
             alt="logo"
-            width={128}
-            height={38}
+            width={35}
+            height={35}
           />
         </Link>
         <SignedIn>
@@ -24,6 +25,8 @@ const Header = () => {
           </nav>
         </SignedIn>
         <div className="flex w-32 justify-end gap-3 ">
+          <Translate />
+
           <SignedIn>
             <UserButton afterSignOutUrl="/" />
             <MobileNav />
